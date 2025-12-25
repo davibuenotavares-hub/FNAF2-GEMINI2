@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Minha Noite de Suspense 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="office">
+            <div id="status">
+                Energia: <span id="power">100</span>% | Hora: <span id="hour">0</span> AM
+                <div id="music-box-status">Caixa de Música: <span id="music-box-level">100</span>%</div>
+            </div>
+
+            <div id="animatronic-jumpscare" class="hidden"></div>
+
+            <div id="duct-left" class="duct"></div>
+            <div id="duct-right" class="duct"></div>
+            <div id="hallway-door" class="door"></div>
+
+            <div id="ui-controls">
+                <button id="mask-btn">MÁSCARA</button>
+                <button id="light-btn">LANTERNA</button>
+                <button id="camera-btn">CÂMERAS</button>
+            </div>
+        </div>
+
+        <div id="camera-feed" class="hidden">
+            <div id="camera-display">
+                <img id="current-camera-view" src="imgs/cam1.jpg" alt="Visão da Câmera">
+                <div id="camera-name">CAM 1: Corredor Principal</div>
+                <div id="animatronic-presence-cam" class="hidden">Animatrônico detectado!</div>
+            </div>
+            <div id="camera-selector">
+                <button class="cam-toggle" data-cam="1">CAM 1</button>
+                <button class="cam-toggle" data-cam="2">CAM 2</button>
+                <button class="cam-toggle" data-cam="3">CAM 3</button>
+                <button id="exit-camera-btn">SAIR</button>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
